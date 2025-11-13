@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портифолио Python-Разработчика</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #4CAF50;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+      margin: 30px 0 15px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+
+    section {
+      padding: 0 40px 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 12px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    li::before {
+      content: "•";
+      color: #4CAF50;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-item {
+      background: #e8f5e9;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .project {
+      background: #f9f9f9;
+      padding: 20px;
+      border-left: 4px solid #4CAF50;
+      margin-bottom: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .project h3 {
+      margin: 0 0 10px 0;
+      color: #2E7D32;
+    }
+
+    .project p {
+      margin: 8px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #388E3C;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        padding: 0 20px 30px;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 30px 15px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Михаил Евгеньевич</h1>
+      <p>Python‑разработчик (Junior/Middle)</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>📞</span>
+          <span>+7 951 402 09 45</span>
+        </div>
+        <div class="contact-item">
+          <span>✉️</span>
+          <span>hdyhhdh75762@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <span>💬</span>
+          <span>@pythondeveloper_middle (Telegram)</span>
+        </div>
+        <div class="contact-item">
+          <span>🔗</span>
+          <span><a href="https://github.com/mihail-pythondev" style="color:white;">GitHub</a></span>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>О себе</h2>
+      <p>
+        Быстро обучаюсь новым технологиям. Внимателен к деталям, умею работать с технической документацией.
+        Ответственный, соблюдаю сроки. Ищу долгосрочное сотрудничество с возможностью роста.
+      </p>
+      <p><strong>Формат:</strong> Удалённо, до 20 часов в неделю (иногда можно до 30 часов в неделю).</p>
+      <p><strong>Зарплата:</strong> От 15.000руб./мес (договорная) или 800руб./час.</p>
+    </section>
+
+    <section>
+      <h2>Ключевые навыки</h2>
+      <div class="skills">
+        <div class="skill-item">Python (3.8+)</div>
+        <div class="skill-item">Основы Java</div>
+        <div class="skill-item">Fullstack (Базовые знания JS, Django и HTML/CSS)</div>
+        <div class="skill-item">Django (базовые знания)</div>
+        <div class="skill-item">telebot</div>
+        <div class="skill-item">threading</div>
+        <div class="skill-item">requests</div>
+        <div class="skill-item">Git</div>
+        <div class="skill-item">VS Code / PyCharm</div>
+        <div class="skill-item">Английский (B1)</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Опыт работы</h2>
+      <div class="project">
+        <h3>Разработчик (с Июня 2019)</h3>
+        <p>Удалённая работа, проекты по запросу:</p>
+        <ul>
+          <li>Разработка Telegram‑ботов на telebot.</li>
+          <li>Автоматизация рутинных задач (парсинг сайтов, отправка отчётов).</li>
+          <li>Тестирование API.</li>
+          <li>Поддержка небольших веб‑приложений на Django.</li>
+          <li>Другие задачи на Python/Java/JS/Lua</li>
+        </ul>
+      </div>
+
+    <section>
+      <h2>Проекты</h2>
+
+      <div class="project">
+        <h3>Космические сражения</h3>
+        <p><strong>Технологии:</strong> Python (pygame)</p>
+        <p>Функционал:</p>
+        <ul>
+          <li>Уничтожение врагов, разные уровни сложности</li>
+          <li>Сбор бустов (мана, скорость, жизни).</li>
+          <li>Супер-выстрел огромным снарядом который убивает всех врагов.</li>
+          <li>Подсчет баллов и запаса жизни, маны и патронов и мн. др.</li>
+        </ul>
+        <a href="https://github.com/mihail-pythondev/pythongame" class="btn" target="_blank">Архив на GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Змейка</h3>
+        <p><strong>Технологии:</strong> Python (pygame)</p>
+        <p>Функционал:</p>
+        <ul>
+          <li>Игра в змейку.</li>
+          <li>Сбор яблок и подсчет очков, увеличение размера змейки.</li>
+        </ul>
+        <a href="https://github.com/mihail-pythondev/snakegame" class="btn" target="_blank">Код на GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>ToolBot - бот с разными инструментами</h3>
+        <p><strong>Технологии:</strong> Python (telebot, faker, requests, sqlite3 и мн. др.)</p>
+        <p>Функционал:</p>
+        <ul>
+          <li>Поиск по базе мошенников телеграм, курс валют.</li>
+          <li>GET-Запрос с выводом результата в виде сообщения.</li>
+          <li>Фейковая личность, прокси сервера телеграм.</li>
+          <li>Реферальная система и многое другое</li>
+        </ul>
+        <a href="https://github.com/mihail-pythondev/toolbot" class="btn" target="_blank">Архив на GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Telegram‑бот для заметок</h3>
+        <p><strong>Технологии:</strong> Python (telebot)</p>
+        <p>Функционал:</p>
+        <ul>
+          <li>Запись и обновление заметок.</li>
+          <li>Просмотр заметок.</li>
+          <li>Удаление заметок.</li>
+        </ul>
+        <a href="https://github.com/mihail-pythondev/writerbot" class="btn" target="_blank">Код на GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Казино в Telegram боте (старое)</h3>
+        <p><strong>Технологии:</strong> Python (telebot, re, random, time, sqlite3)</p>
+        <p>Функционал:</p>
+        <ul>
+          <li>Игра в кости, дартс и слоты.</li>
+          <li>Аккаунты и работа с балансом.</li>
+          <li>Хранение данных в бд на sqlite3.</li>
+        </ul>
+        <a href="https://github.com/mihail-pythondev/cosmo_casino" class="btn" target="_blank">Архив на GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Образование</h2>
+      <div class="project">
+        <h3>Онлайн‑курсы по Python (2023–2025)</h3>
+        <ul>
+          <li>«Python Middle. (Django и MySQL)» от Wellkid (в процессе).</li>
+          <li>«Python. Уровень 1. (Основы Python)» от Wellkid (завершено).</li>
+          <li>«Основы Python.» от Hexlet (завершено).</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Онлайн школа Wellkid (2023-2025)</h3>
+        <p><strong>Специальность:</strong> «Middle Python разработчик»</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>О навыках углублённо</h2>
+      <ul>
+        <li><strong>Python:</strong> уверенное владение синтаксисом, ООП, работа с модулями и пакетами.</li>
+        <li><strong>Django:</strong> базовые знания, продолжаю углублять (модели, представления, шаблоны).</li>
+        <li><strong>Автоматизация:</strong> боты (telebot), многопоточность (threading), парсинг.</li>
+        <li><strong>Работа с данными:</strong> JSON, sqlite3, API‑интеграция через requests.</li>
+        <li><strong>Инструменты:</strong> Git, VSCode, PyCharm.</li>
+        <li><strong>Английский:</strong> Чтение документации, базовое общение (B1).</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Последнее обновление: 13 ноября, 2025г.</p>
+      <p>Готов предоставить рекомендации по запросу.</p>
+    </footer>
+  </div>
+</body>
+</html>
